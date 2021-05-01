@@ -13,7 +13,15 @@
             <div class="row">
               <div class="three wide center aligned column">
                 <div class="avatar-wrapper">
-                  <object class="avatar" data="./pictures/17903454_10158949965035725_3181251005684687258_n.jpg" role="img" aria-label="My profile picture"></object>
+                  <picture class="avatar-wrapper">
+                    <source srcset="./pictures/webp/DonaldTrump-420.webp 1x, ./pictures/webp/DonaldTrump-420@2x.webp 2x" 
+                        media="(min-width: 320px)" 
+                        type="image/webp" />
+                    <source srcset="./pictures/jpg/DonaldTrump-420.jpg 1x, ./pictures/jpg/DonaldTrump-420@2x.jpg 2x" 
+                        media="(min-width: 320px)" />
+                
+                    <img class="avatar" src="./pictures/jpg/DonaldTrump-420.jpg" alt="Donald Trump" width="420">
+                </picture>
                 </div>
               </div>
               <div class="thirteen wide column">
