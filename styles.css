@@ -49,3 +49,19 @@
 .category-button:focus {
     background-color: rgb(245, 139, 139);
 }
+
+html {
+    height: 100%;
+}
+
+::selection {
+    background-color: rgba(245, 139, 139, 0.589);
+}
+
+main {
+    background-image: url(./pictures/american-flag-screen-backgrounds-wallpaper-preview.jpg);
+}
+
+.page:hover {
+    box-shadow: 0 10px 100px 0 rgba(245, 139, 139, .3);
+}
