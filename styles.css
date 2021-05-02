@@ -40,3 +40,7 @@
 .buttons {
     display: inline-flex;
 }
+
+.is-hidden {
+    display: none;
+}
