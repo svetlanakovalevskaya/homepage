@@ -44,3 +44,8 @@
 .is-hidden {
     display: none;
 }
+
+.category-button:hover,
+.category-button:focus {
+    background-color: rgb(245, 139, 139);
+}
