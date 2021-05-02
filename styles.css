@@ -23,10 +23,17 @@
     transform: translateY(100%);
 }
 
-.categories {
+.category:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0 !important;
+}
+
+.category-button {
     display: flex;
     width: 150px;
-    height: 30px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(196, 97, 97);
 }
 
