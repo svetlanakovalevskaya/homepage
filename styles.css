@@ -125,8 +125,14 @@ body.modal-open {
     height: 50px;
     align-items: center;
     justify-content: center;
-    background-color: rgb(125, 212, 24);
+    background-color: rgb(126, 216, 23);
     border-radius: 50%;
+}
+
+.above18:hover,
+.above18:focus {
+    color: rgb(30, 126, 18);
+    background-color: rgb(173, 241, 95);
 }
 
 .under18 {
@@ -139,4 +145,39 @@ body.modal-open {
     justify-content: center;
     background-color: rgb(235, 102, 102);
     border-radius: 50%;
+}
+
+.under18:hover,
+.under18:focus {
+    color: #fff;
+    background-color: rgb(255, 124, 124);
+}
+
+.icon-checkmark {
+    fill:rgb(46, 80, 7)
+}
+
+.icon-cross {
+    fill: rgb(224, 18, 18)
+}
+
+.above18-text {
+    margin-right: 15px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.under18-text {
+    margin-right: 15px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.under18-video {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
 }
