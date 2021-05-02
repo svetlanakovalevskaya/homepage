@@ -22,3 +22,14 @@
 .avatar-animation:focus {
     transform: translateY(100%);
 }
+
+.categories {
+    display: flex;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(196, 97, 97);
+}
+
+.buttons {
+    display: inline-flex;
+}
