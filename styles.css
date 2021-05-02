@@ -1,0 +1,67 @@
+.avatar-wrapper {
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+}
+
+.avatar-animation {
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+}
+
+.avatar2 {
+    border-radius: 60%;
+    transform: scale(0.9, 0.9);
+}
+
+.avatar-animation:hover,
+.avatar-animation:focus {
+    transform: translateY(100%);
+}
+
+.category:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0 !important;
+}
+
+.category-button {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(196, 97, 97);
+}
+
+.buttons {
+    display: inline-flex;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.category-button:hover,
+.category-button:focus {
+    background-color: rgb(245, 139, 139);
+}
+
+html {
+    height: 100%;
+}
+
+::selection {
+    background-color: rgba(245, 139, 139, 0.589);
+}
+
+main {
+    background-image: url(./pictures/american-flag-screen-backgrounds-wallpaper-preview.jpg);
+}
+
+.page:hover {
+    box-shadow: 0 10px 100px 0 rgba(245, 139, 139, .3);
+}
