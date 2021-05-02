@@ -1,0 +1,24 @@
+.avatar-wrapper {
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+}
+
+.avatar-animation {
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+}
+
+.avatar2 {
+    border-radius: 60%;
+    transform: scale(0.9, 0.9);
+}
+
+.avatar-animation:hover,
+.avatar-animation:focus {
+    transform: translateY(100%);
+}
