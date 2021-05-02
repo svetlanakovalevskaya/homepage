@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <div class="backdrop" data-backdrop>
+      <div class="modal" data-modal>
+        <img class="modal-trump" src="./pictures/png/trump-check-age.png" alt="Donald Trump" width="420">
+        <img class="modal-adult" src="./pictures/png/under-18.png" alt="Donald Trump" width="420">
+          <button type="button" class="check-age-button above18" data-modal-close>
+            <span class="above18-text">I'm above 18</span>
+            <svg width="20" height="20">
+              <use class="icon-checkmark" href="./pictures/symbol-defs.svg#icon-checkmark"></use>
+            </svg>
+          </button>
+          <button type="button" class="check-age-button under18" data-modal-under18>
+            <span class="under18-text">I'm under 18</span>
+            <svg width="20" height="20">
+              <use class="icon-cross" href="./pictures/symbol-defs.svg#icon-cross"></use>
+            </svg>
+          </button>
+      </div>
+    </div>
     <main>
-      <article>
+      <article> 
         <div class="page" style="border-color: #994d4d;">
           <div class="stackable grid">
             <div class="row">
@@ -424,6 +442,7 @@
         </div>  
       </article>
     </main>
+    <script src="./js/modal.js"></script>
     <script src="./js/categories.js"></script>
   </body>
 </html>

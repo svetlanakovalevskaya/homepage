@@ -1,36 +1,40 @@
-'use strict';
+(() => {
 
-const experienceBtnEl = document.querySelector('.js-experience');
-const personalLifeBtnEl = document.querySelector('.js-personal-life');
-const mediaCareerBtnEl = document.querySelector('.js-media-career');
-const experienceSectionEl = document.querySelector('.js-experience-information');
-const personalLifeSectionEl = document.querySelector('.js-personal-information');
-const mediaCareerSectionEl = document.querySelector('.js-media-information');
-
-experienceBtnEl.addEventListener('click', onClickExperienceBtn);
-personalLifeBtnEl.addEventListener('click', onClickPersonalLifeBtn);
-mediaCareerBtnEl.addEventListener('click', onClickMediaCareerBtnBtn);
-
-function onClickExperienceBtn (event) {
-  if (experienceSectionEl.classList.contains('is-hidden')) {
-      experienceSectionEl.classList.remove('is-hidden');
-      personalLifeSectionEl.classList.add('is-hidden');
-      mediaCareerSectionEl.classList.add('is-hidden');
-  }
-}
-
-function onClickPersonalLifeBtn (event) {
-    if (personalLifeSectionEl.classList.contains('is-hidden')) {
-        personalLifeSectionEl.classList.remove('is-hidden');
-        experienceSectionEl.classList.add('is-hidden');
-        mediaCareerSectionEl.classList.add('is-hidden');
+    const refs = {
+        experienceBtnEl: document.querySelector('.js-experience'),
+        personalLifeBtnEl: document.querySelector('.js-personal-life'),
+        mediaCareerBtnEl: document.querySelector('.js-media-career'),
+        experienceSectionEl: document.querySelector('.js-experience-information'),
+        personalLifeSectionEl: document.querySelector('.js-personal-information'),
+        mediaCareerSectionEl: document.querySelector('.js-media-information'),
     }
-}
-
-function onClickMediaCareerBtnBtn (event) {
-    if (mediaCareerSectionEl.classList.contains('is-hidden')) {
-        mediaCareerSectionEl.classList.remove('is-hidden');
-        experienceSectionEl.classList.add('is-hidden');
-        personalLifeSectionEl.classList.add('is-hidden');
+    
+    refs.experienceBtnEl.addEventListener('click', onClickExperienceBtn);
+    refs.personalLifeBtnEl.addEventListener('click', onClickPersonalLifeBtn);
+    refs.mediaCareerBtnEl.addEventListener('click', onClickMediaCareerBtnBtn);
+    
+    function onClickExperienceBtn (event) {
+        if (refs.experienceSectionEl.classList.contains('is-hidden')) {
+             refs.experienceSectionEl.classList.remove('is-hidden');
+             refs.personalLifeSectionEl.classList.add('is-hidden');
+             refs.mediaCareerSectionEl.classList.add('is-hidden');
+        }
     }
-}
+
+    function onClickPersonalLifeBtn (event) {
+        if (refs.personalLifeSectionEl.classList.contains('is-hidden')) {
+            refs.personalLifeSectionEl.classList.remove('is-hidden');
+            refs.experienceSectionEl.classList.add('is-hidden');
+            refs.mediaCareerSectionEl.classList.add('is-hidden');
+        }
+    }
+
+    function onClickMediaCareerBtnBtn (event) {
+        if (refs.mediaCareerSectionEl.classList.contains('is-hidden')) {
+            refs.mediaCareerSectionEl.classList.remove('is-hidden');
+            refs.experienceSectionEl.classList.add('is-hidden');
+            refs.personalLifeSectionEl.classList.add('is-hidden');
+        }
+    }
+
+})();
