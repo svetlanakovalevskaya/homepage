@@ -240,4 +240,29 @@ body {
   .other-info-btn:focus {
     background-color: rgb(245, 139, 139);
   }
+
+  .modal {
+    width: 100%;
+  }
+
+  .modal-trump {
+    max-width: 300px;
+    right: -100px;
+  }
+
+  .modal-adult {
+    width: 100px;
+    top: 70px;
+    left: 60px;
+  }
+
+  .above18 {
+    top: 160px;
+    right: -30px;
+  }
+
+  .under18 {
+    top: 220px;
+    right: -35px;
+  }
 }
