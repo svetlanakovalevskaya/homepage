@@ -1,197 +1,198 @@
 .avatar-wrapper {
-    position: relative;
+  position: relative;
 }
-
+  
 .avatar {
-    position: absolute;
-    right: 0;
-    border-radius: 50%;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
 }
-
+  
 .avatar-animation {
-    transition-duration: 250ms;
-    transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
-
+  
 .avatar2 {
-    border-radius: 60%;
-    transform: scale(0.9, 0.9);
+  border-radius: 60%;
+  transform: scale(0.9, 0.9);
 }
-
+  
 .avatar-animation:hover,
 .avatar-animation:focus {
-    transform: translateY(100%);
+  transform: translateY(100%);
 }
-
+  
 .category:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 0 !important;
+  margin-right: 30px;
+  margin-bottom: 0 !important;
 }
-
+  
 .category-button {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(196, 97, 97);
+  display: flex;
+  width: 150px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(196, 97, 97);
 }
-
+  
 .buttons {
-    display: inline-flex;
+  display: inline-flex;
 }
-
+  
 .is-hidden {
-    display: none;
+  display: none;
 }
-
+  
 .category-button:hover,
 .category-button:focus {
-    background-color: rgb(245, 139, 139);
+  background-color: rgb(245, 139, 139);
 }
-
+  
 html {
-    height: 100%;
+  height: 100%;
 }
-
+  
 ::selection {
-    background-color: rgba(245, 139, 139, .589);
+  background-color: rgba(245, 139, 139, 0.589);
 }
-
+  
 main {
-    background-image: url(./pictures/american-flag-screen-backgrounds-wallpaper-preview.jpg);
+  background-image: url(./pictures/american-flag-screen-backgrounds-wallpaper-preview.jpg);
 }
-
+  
 .page:hover {
-    box-shadow: 0 10px 100px 0 rgba(245, 139, 139, .3);
+  box-shadow: 0 10px 100px 0 rgba(245, 139, 139, 0.3);
 }
-
   
 .backdrop {
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(245, 139, 139, .589);
-    padding: 93px 15px;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 139, 139, 0.589);
+  padding: 93px 15px;
 }
-
+  
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 50px;
-    width: 100%;
-    padding: 40px;
-    transform: translate(-50%, -50%) scale(1);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 50px;
+  width: 100%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #fff;
 }
-
+  
 body.modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
-
+  
 .check-age-button {
-    display: flex;
-    width: 50px;
+  display: flex;
+  width: 50px;
 }
-
+  
 .modal-trump {
-    position: absolute;
-    top: -250px;
-    right: -150px;
+  position: absolute;
+  top: -250px;
+  right: -150px;
 }
-
+  
 .modal-adult {
-    position: absolute;
-    top: 80px;
-    left: 150px;
-    width: 200px;
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  width: 200px;
 }
-
+  
 .above18 {
-    position: absolute;
-    top: 255px;
-    right: 80px;
-    display: flex;
-    width: 170px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(126, 216, 23);
-    border-radius: 50%;
+  position: absolute;
+  top: 255px;
+  right: 80px;
+  display: flex;
+  width: 170px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(126, 216, 23);
+  border-radius: 50%;
 }
-
+  
 .above18:hover,
 .above18:focus {
-    color: rgb(30, 126, 18);
-    background-color: rgb(173, 241, 95);
+  color: rgb(30, 126, 18);
+  background-color: rgb(173, 241, 95);
 }
-
+  
 .under18 {
-    position: absolute;
-    top: 255px;
-    display: flex;  
-    width: 170px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(235, 102, 102);
-    border-radius: 50%;
+  position: absolute;
+  top: 255px;
+  display: flex;
+  width: 170px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(235, 102, 102);
+  border-radius: 50%;
 }
-
+  
 .under18:hover,
 .under18:focus {
-    color: #fff;
-    background-color: rgb(255, 124, 124);
+  color: #fff;
+  background-color: rgb(255, 124, 124);
 }
-
+  
 .icon-checkmark {
-    fill:rgb(46, 80, 7)
+  fill: rgb(46, 80, 7);
 }
-
+  
 .icon-cross {
-    fill: rgb(224, 18, 18)
+  fill: rgb(224, 18, 18);
 }
-
+  
 .above18-text {
-    margin-right: 15px;
-    font-size: large;
-    font-weight: 700;
+  margin-right: 15px;
+  font-size: large;
+  font-weight: 700;
 }
-
+  
 .under18-text {
-    margin-right: 15px;
-    font-size: large;
-    font-weight: 700;
+  margin-right: 15px;
+  font-size: large;
+  font-weight: 700;
 }
-
+  
 .under18-video {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
+  
 body {
-    height: 100%;
+  height: 100%;
 }
-
+  
 .mobile {
-    display: none;
+  display: none;
 }
-
+  
 @media screen and (max-width: 767px) {
   .avatar {
     position: relative;
     width: auto;
   }
-
+  
   .avatar-animation:hover,
   .avatar-animation:focus {
     transform: none;
@@ -202,17 +203,17 @@ body {
   }
 
   .resume-title {
-      text-align: center;
+    text-align: center;
   }
 
   .timeline.buttons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
+  
   .category:not(:last-child) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .mobile {
@@ -232,37 +233,37 @@ body {
     line-height: 1.15;
     text-align: center;
     color: #fff;
-
     background-color: rgb(196, 97, 97);
   }
-
+  
   .other-info-btn:hover,
   .other-info-btn:focus {
     background-color: rgb(245, 139, 139);
   }
-
+  
   .modal {
     width: 100%;
   }
-
+  
   .modal-trump {
     max-width: 300px;
     right: -100px;
   }
-
+  
   .modal-adult {
     width: 100px;
     top: 70px;
     left: 60px;
   }
-
+  
   .above18 {
     top: 160px;
     right: -30px;
   }
-
+  
   .under18 {
     top: 220px;
     right: -35px;
   }
 }
+  
