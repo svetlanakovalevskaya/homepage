@@ -181,3 +181,19 @@ body.modal-open {
 body {
     height: 100%;
 }
+
+@media screen and (max-width: 767px) {
+  .avatar {
+      position: relative;
+      width: auto;
+  }
+
+  .avatar-animation:hover,
+  .avatar-animation:focus {
+    transform: none;
+  }
+
+  .avatar2 {
+      display: none;
+  }
+}
