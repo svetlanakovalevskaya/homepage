@@ -74,7 +74,6 @@ main {
   width: 100%;
   height: 100%;
   background-color: rgba(245, 139, 139, 0.589);
-  padding: 93px 15px;
 }
 
 .modal {
@@ -187,6 +186,55 @@ body {
   display: none;
 }
 
+.bonus-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(196, 97, 97);
+}
+
+.bonus-button-text {
+  margin-right: 10px;
+}
+
+.icon-bonus {
+  fill:rgb(122, 18, 126);
+}
+
+.bonus-section {
+  position: relative;
+}
+
+.video-bonus {
+  position: absolute;
+  top: 70px;
+  right: 248px;
+}
+
+.bonus-close-button {
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  right: 248px;
+  width: 45px;
+  height: 45px;
+  background-color: rgb(228, 116, 116);
+  border-radius: 10%;
+}
+
+.bonus-close-icon {
+  fill: #fff;
+}
+
+.bonus-button:hover,
+.bonus-button:focus,
+.bonus-close-button:hover,
+.bonus-close-button:focus {
+  background-color: rgb(245, 139, 139);
+}
+
 @media screen and (max-width: 767px) {
   .avatar {
     position: relative;
@@ -264,5 +312,19 @@ body {
   .under18 {
     top: 220px;
     right: -35px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .video-bonus {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+  }
+
+  .bonus-close-button {
+    height: 40px;
+    right: 0;
   }
 }

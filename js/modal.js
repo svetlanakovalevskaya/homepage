@@ -15,7 +15,6 @@
       refs.modal.classList.toggle("is-hidden");
       document.body.classList.toggle("modal-open");
       refs.backdrop.classList.remove("backdrop");
-
     }
 
     function blockAccess() {
