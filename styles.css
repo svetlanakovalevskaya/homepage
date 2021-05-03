@@ -313,15 +313,18 @@ body {
     top: 220px;
     right: -35px;
   }
+}
 
+@media screen and (max-width: 1199px) {
   .video-bonus {
+    width: 100%;
     position: absolute;
     top: 70px;
-    right: 0px;
-    width: 100%;
+    right: 0;
   }
 
   .bonus-close-button {
     height: 40px;
+    right: 0;
   }
 }
