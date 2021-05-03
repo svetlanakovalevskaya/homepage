@@ -13,7 +13,7 @@
     refs.personalLifeBtnEl.addEventListener('click', onClickPersonalLifeBtn);
     refs.mediaCareerBtnEl.addEventListener('click', onClickMediaCareerBtnBtn);
     
-    function onClickExperienceBtn (event) {
+    function onClickExperienceBtn () {
         if (refs.experienceSectionEl.classList.contains('is-hidden')) {
              refs.experienceSectionEl.classList.remove('is-hidden');
              refs.personalLifeSectionEl.classList.add('is-hidden');
@@ -21,7 +21,7 @@
         }
     }
 
-    function onClickPersonalLifeBtn (event) {
+    function onClickPersonalLifeBtn () {
         if (refs.personalLifeSectionEl.classList.contains('is-hidden')) {
             refs.personalLifeSectionEl.classList.remove('is-hidden');
             refs.experienceSectionEl.classList.add('is-hidden');
@@ -29,12 +29,11 @@
         }
     }
 
-    function onClickMediaCareerBtnBtn (event) {
+    function onClickMediaCareerBtnBtn () {
         if (refs.mediaCareerSectionEl.classList.contains('is-hidden')) {
             refs.mediaCareerSectionEl.classList.remove('is-hidden');
             refs.experienceSectionEl.classList.add('is-hidden');
             refs.personalLifeSectionEl.classList.add('is-hidden');
         }
     }
-
 })();
