@@ -181,3 +181,88 @@ body.modal-open {
 body {
     height: 100%;
 }
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .avatar {
+    position: relative;
+    width: auto;
+  }
+
+  .avatar-animation:hover,
+  .avatar-animation:focus {
+    transform: none;
+  }
+
+  .avatar2 {
+    display: none;
+  }
+
+  .resume-title {
+      text-align: center;
+  }
+
+  .timeline.buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .category:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .other-info-btn {
+    display: block;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 17.5px;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.15;
+    text-align: center;
+    color: #fff;
+
+    background-color: rgb(196, 97, 97);
+  }
+
+  .other-info-btn:hover,
+  .other-info-btn:focus {
+    background-color: rgb(245, 139, 139);
+  }
+
+  .modal {
+    width: 100%;
+  }
+
+  .modal-trump {
+    max-width: 300px;
+    right: -100px;
+  }
+
+  .modal-adult {
+    width: 100px;
+    top: 70px;
+    left: 60px;
+  }
+
+  .above18 {
+    top: 160px;
+    right: -30px;
+  }
+
+  .under18 {
+    top: 220px;
+    right: -35px;
+  }
+}
