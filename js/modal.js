@@ -11,10 +11,11 @@
     refs.above18ModalBtn.addEventListener("click", toggleModal);
     refs.under18ModalBtn.addEventListener("click", blockAccess);
   
-    function toggleModal() {
+    function toggleModal(evt) {
       refs.modal.classList.toggle("is-hidden");
       document.body.classList.toggle("modal-open");
       refs.backdrop.classList.remove("backdrop");
+
     }
 
     function blockAccess() {
