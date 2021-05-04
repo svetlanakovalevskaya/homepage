@@ -3,6 +3,7 @@
         bonusBtnEl: document.querySelector('.bonus-button'),
         bonusSectionEl: document.querySelector('.bonus-section'),
         bonusBackdropEl: document.querySelector('#backdrop'),
+        backgroundAudioEl: document.querySelector('.background-audio'),
     }
 
     refs.bonusBtnEl.addEventListener('click', onClickBonusBtn);
@@ -28,11 +29,22 @@
 
         bonusCloseBtnEl.addEventListener('click', onClickBonusCloseBtn);
         refs.bonusBackdropEl.classList.add('backdrop');
+
+        refs.backgroundAudioEl.innerHTML = '';
     }
 
     function onClickBonusCloseBtn () {
         refs.bonusSectionEl.innerHTML = '';
         document.body.classList.remove("modal-open");
         refs.bonusBackdropEl.classList.toggle('backdrop');
+
+        refs.backgroundAudioEl.innerHTML = `
+        <audio 
+          src="./y2mate.com - 50 Cent  Candy Shop Official Music Video ft Olivia-28.1-249.3.mp3"  
+          autoplay 
+          loop 
+          preload="auto"
+        ></audio>
+      `;
     }
 })();
