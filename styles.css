@@ -235,6 +235,45 @@ body {
   background-color: rgb(245, 139, 139);
 }
 
+.background-image {
+  background-image:
+    url('./pictures/gif/dancing-cat.gif'),
+    url(./pictures/gif/red-cat.gif);
+  background-repeat: no-repeat;
+  background-position: top right, bottom right;
+  background-size: 100px, 200px;
+}
+
+.background-image-2 {
+  background-image:
+    url('./pictures/gif/dancing-cat.gif'),
+    url(./pictures/gif/red-cat.gif);
+  background-repeat: no-repeat;
+  background-position: top right, bottom right;
+  background-size: 100px, 200px;
+}
+
+@media screen and (min-width: 767px) {
+  .background-image {
+    background-size: auto, 200px;
+  }
+
+  .background-image-2 {
+    background-position: top right, bottom left;
+    background-size: auto, 200px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .background-image {
+    background-size: auto, 400px;
+  }
+
+  .background-image-2 {
+    background-size: auto, 400px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .avatar {
     position: relative;
@@ -327,22 +366,4 @@ body {
     height: 40px;
     right: 0;
   }
-}
-
-.background-image {
-  background-image:
-    url('./pictures/gif/dancing-cat.gif'),
-    url(./pictures/gif/red-cat.gif);
-  background-repeat: no-repeat;
-  background-position: top right, bottom right;
-  background-size: auto, 400px;
-}
-
-.background-image-2 {
-  background-image:
-    url('./pictures/gif/dancing-cat.gif'),
-    url(./pictures/gif/red-cat.gif);
-  background-repeat: no-repeat;
-  background-position: top right, bottom left;
-  background-size: auto, 400px;
 }
