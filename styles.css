@@ -328,3 +328,19 @@ body {
     right: 0;
   }
 }
+
+.background-image {
+  background-image: url('./pictures/gif/dancing-cat.gif'),
+    url(./pictures/gif/red-cat.gif);
+  background-repeat: no-repeat;
+  background-position: top right, bottom right;
+  background-size: auto, 400px;
+}
+
+.background-image-2 {
+  background-image: url('./pictures/gif/dancing-cat.gif'),
+    url(./pictures/gif/red-cat.gif);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  background-size: auto, 400px;
+}

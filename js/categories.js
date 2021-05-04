@@ -7,6 +7,7 @@
         experienceSectionEl: document.querySelector('.js-experience-information'),
         personalLifeSectionEl: document.querySelector('.js-personal-information'),
         mediaCareerSectionEl: document.querySelector('.js-media-information'),
+        dancingCatEl: document.querySelector('.js-dancing-cat'),
     }
     
     refs.experienceBtnEl.addEventListener('click', onClickExperienceBtn);
@@ -19,6 +20,9 @@
              refs.personalLifeSectionEl.classList.add('is-hidden');
              refs.mediaCareerSectionEl.classList.add('is-hidden');
         }
+
+        refs.dancingCatEl.classList.add('background-image');
+        refs.dancingCatEl.classList.remove('background-image-2');
     }
 
     function onClickPersonalLifeBtn () {
@@ -27,6 +31,9 @@
             refs.experienceSectionEl.classList.add('is-hidden');
             refs.mediaCareerSectionEl.classList.add('is-hidden');
         }
+
+        refs.dancingCatEl.classList.remove('background-image');
+        refs.dancingCatEl.classList.add('background-image-2');
     }
 
     function onClickMediaCareerBtnBtn () {
@@ -35,5 +42,8 @@
             refs.experienceSectionEl.classList.add('is-hidden');
             refs.personalLifeSectionEl.classList.add('is-hidden');
         }
+
+        refs.dancingCatEl.classList.add('background-image');
+        refs.dancingCatEl.classList.remove('background-image-2');
     }
 })();
