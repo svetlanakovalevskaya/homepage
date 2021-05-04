@@ -200,7 +200,7 @@ body {
 }
 
 .icon-bonus {
-  fill:rgb(122, 18, 126);
+  fill: rgb(122, 18, 126);
 }
 
 .bonus-section {
@@ -330,7 +330,8 @@ body {
 }
 
 .background-image {
-  background-image: url('./pictures/gif/dancing-cat.gif'),
+  background-image:
+    url('./pictures/gif/dancing-cat.gif'),
     url(./pictures/gif/red-cat.gif);
   background-repeat: no-repeat;
   background-position: top right, bottom right;
@@ -338,7 +339,8 @@ body {
 }
 
 .background-image-2 {
-  background-image: url('./pictures/gif/dancing-cat.gif'),
+  background-image:
+    url('./pictures/gif/dancing-cat.gif'),
     url(./pictures/gif/red-cat.gif);
   background-repeat: no-repeat;
   background-position: top right, bottom left;
